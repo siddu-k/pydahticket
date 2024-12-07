@@ -1,0 +1,149 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    overflow: hidden;
+    
+        height: 100vh;
+        overflow- -y: auto; 
+        overflow-y: auto; 
+      
+      
+  }
+  
+  /* Container Styles */
+  .portal-container {
+    width: 90%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Header */
+  .portal-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+  }
+  
+  .portal-header .logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .portal-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #444;
+  }
+  
+  .portal-header p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  /* Main Section */
+  .portal-main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+  
+  .portal-card {
+    width: calc(50% - 20px);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .portal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portal-card .card-icon {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 15px auto;
+  }
+  
+  .new-submission-icon {
+    background: url('submit-icon.png') no-repeat;
+  }
+  
+  .track-ticket-icon {
+    background: url('track-icon.png') no-repeat;
+  }
+  
+  .portal-card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #007bff;
+    margin: 10px 0;
+  }
+  
+  .portal-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .portal-card button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .portal-card button:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .portal-card {
+      width: 100%;
+    }
+  
+    .portal-header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .portal-header p {
+      font-size: 0.9rem;
+    }
+  }
+  

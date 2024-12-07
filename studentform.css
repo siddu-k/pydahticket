@@ -1,0 +1,104 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Container styling */
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  margin-bottom: 1rem;
+}
+
+.logo img {
+
+  height: 60px;
+
+}
+
+/* Titles and subtitles */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+/* Input, textarea, and select */
+input, textarea, select {
+  width: 90%;
+  padding: 0.9rem;
+  margin: 0.8rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #4facfe;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  background: #007bb5;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #005f8d;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .container {
+      padding: 1.5rem;
+  }
+
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  .subtitle {
+      font-size: 0.9rem;
+  }
+
+  input, textarea, select {
+      font-size: 1rem;
+  }
+
+  button {
+      font-size: 1.1rem;
+  }
+}

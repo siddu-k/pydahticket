@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Ticket Submission</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="studentform.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="logo1.avif" alt="Logo" width="100">
+    </div>
+    <h1>Submit Your Ticket</h1>
+    <p class="subtitle">We’re here to help. Please provide the details below.</p>
+    <form id="ticketForm">
+      <input type="text" id="name" placeholder="Full Name" required><br>
+      <input type="email" id="email" placeholder="Email Address" required><br>
+      <input type="tel" id="phone" placeholder="Phone Number" required><br>
+
+      <!-- Subject Selection -->
+      <select id="subject" required>
+        <option value="" disabled selected>Select Subject</option>
+        <option value="Infrastructure">Infrastructure</option>
+        <option value="Hostel Facilities">Hostel Facilities</option>
+        <option value="Teaching">Teaching</option>
+        <option value="Bus Transportation">Bus Transportation</option>
+        <option value="Suggestions">Suggestions</option>
+        <option value="Complaints">Complaints</option>
+      </select><br>
+
+      <input type="text" id="pin" placeholder="PIN" required><br>
+      <textarea id="problem" placeholder="Describe your problem" required></textarea><br>
+
+      <button type="submit">Submit Ticket</button>
+    </form>
+  </div>
+
+  <script type="module" src="studentpanel.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container styling */
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Header styling */
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+.track-ticket-form {
+  padding: 20px;
+  text-align: center;
+}
+
+.track-ticket-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.track-ticket-form input[type="text"] {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.track-ticket-form input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.track-ticket-form button {
+  width: 90%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.track-ticket-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Ticket list styling */
+#ticketList {
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+#ticketList div {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  word-wrap: break-word; /* Ensures long words or URLs wrap properly */
+  overflow-wrap: break-word; /* Compatible alternative for text wrapping */
+  overflow: hidden; /* Ensures no overflow content is visible */
+  max-width: 100%; /* Prevents content from exceeding the container */
+  box-sizing: border-box; /* Includes padding and border in width calculations */
+}
+
+#ticketList div p {
+  margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .track-ticket-form h2 {
+    font-size: 1.3rem;
+  }
+
+  .track-ticket-form input[type="text"],
+  .track-ticket-form button {
+    font-size: 0.95rem;
+  }
+
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+}

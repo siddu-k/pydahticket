@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /tickets/{ticketId} {
+      allow read, delete: if request.auth != null; // Only authenticated users can read or delete
+      allow write: if true; // Allow anyone to write tickets (for customer panel)
+    }
+  }
+}

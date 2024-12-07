@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="portal-container">
+    <!-- Header -->
+    <header class="portal-header">
+      <div class="logo">
+        <img src="logo.png" alt="Portal Logo">
+      </div>
+      <h1>Welcome to Student Portal</h1>
+      <p>Manage your submissions and track your tickets effortlessly.</p>
+    </header>
+
+    <!-- Main Cards Section -->
+    <main class="portal-main">
+      <div class="portal-card" id="newSubmission">
+        <div class="card-icon new-submission-icon"></div>
+        <h2>New Submission</h2>
+        <p>Quickly submit your queries or documents for processing.</p>
+        <button onclick="navigateTo('studentform.html')">Submit Now</button>
+      </div>
+
+      <div class="portal-card" id="trackTicket">
+        <div class="card-icon track-ticket-icon"></div>
+        <h2>Track Ticket</h2>
+        <p>Easily track the current status of your existing submissions.</p>
+        <button onclick="navigateTo('studenttrack.html')">Track Now</button>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>
