@@ -38,6 +38,21 @@
     </form>
   </div>
 
+  <script>
+    // Handle form submission
+    document.getElementById('ticketForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission behavior
+
+      // Here you can add your form submission logic (e.g., send to server, etc.)
+      // For now, we'll just redirect to the emailform.html page after a successful form submission
+
+      alert('Your ticket has been submitted successfully! Redirecting...');
+
+      // Redirect to the email form page
+      window.location.href = 'emailform.html';  // This will open your emailform.html
+    });
+  </script>
+
   <script type="module" src="studentform.js"></script>
 </body>
 </html>
