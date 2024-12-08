@@ -32,3 +32,9 @@ document.getElementById('trackButton').addEventListener('click', async () => {
     alert('Please enter a PIN.');
   }
 });
+
+document.getElementById('backButton').addEventListener('click', function() {
+  window.history.back(); // Goes back to the previous page
+});
+
+

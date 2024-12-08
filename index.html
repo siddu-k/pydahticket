@@ -3,39 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Portal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Student Panel</title>
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- External Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="portal-container">
-    <!-- Header -->
-    <header class="portal-header">
-      <!-- <div class="logo">
-        <img src="logo.png" alt="Portal Logo">
-      </div>-->
-      <h1>Welcome to Student Portal</h1>
-      <p>Manage your submissions and track your tickets effortlessly.</p>
+  <div class="student-panel-container">
+    <!-- Header Section -->
+    <header class="panel-header">
+      <div class="logo1">
+        <img src="logo1.avif" alt="College Logo">
+      </div>
+      <h1>Student Panel</h1>
+      <p classs = "p1"></p>
     </header>
 
-    <!-- Main Cards Section -->
-    <main class="portal-main">
-      <div class="portal-card" id="newSubmission">
-        <div class="card-icon new-submission-icon"></div>
-        <h2>New Submission</h2>
-        <p>Quickly submit your queries or documents for processing.</p>
-        <button onclick="navigateTo('studentform.html')">Submit Now</button>
+    <!-- Main Section -->
+    <main class="panel-main">
+      <!-- New Ticket Card -->
+      <div class="panel-card" id="newSubmission">
+        <div class="card-icon">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <h2>Submit a Ticket</h2>
+        <p>Have an issue or a request? Submit it here.</p>
+        <button onclick="navigateTo('studentform.html')">Submit Ticket</button>
       </div>
 
-      <div class="portal-card" id="trackTicket">
-        <div class="card-icon track-ticket-icon"></div>
-        <h2>Track Ticket</h2>
-        <p>Easily track the current status of your existing submissions.</p>
-        <button onclick="navigateTo('studenttrack.html')">Track Now</button>
+      <!-- Track Ticket Card -->
+      <div class="panel-card" id="trackTicket">
+        <div class="card-icon">
+          <i class="fa-solid fa-location-arrow"></i>
+        </div>
+        <h2>Track Your Ticket</h2>
+        <p>Check the status of your submissions in real-time.</p>
+        <button onclick="navigateTo('studenttrack.html')">Track Status</button>
+      </div>
+
+      <!-- Help/Guidelines Card -->
+      <div class="panel-card" id="guidelines">
+        <div class="card-icon">
+          <i class="fa-solid fa-info-circle"></i>
+        </div>
+        <h2>Help & Guidelines</h2>
+        <p>Learn how to effectively use the portal.</p>
+        <button onclick="navigateTo('help.html')">Learn More</button>
       </div>
     </main>
+
+    <!-- Footer Section -->
+    <footer class="panel-footer">
+      <p>2024 <span>PYDAH GROUP</span>. All rights reserved.</p>
+      <p class="contact-info">
+        For queries, contact 
+        <a href="mailto:support@college.edu">support@college.edu</a>
+        <br>
+        &copy; by <a href="https://www.linkedin.com/in/sri-datta-sidhardha-kondeti-650139301" target="_blank">Siddu-k</a>
+      </p>
+          </footer>
   </div>
 
+  <!-- JavaScript -->
   <script>
     function navigateTo(page) {
       window.location.href = page;

@@ -1,149 +1,189 @@
 /* General Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.student-panel-container {
+  width: 95%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+/* Header Section */
+.panel-header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  color: white;
+}
+
+.panel-header .logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.panel-header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.panel-header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #d6e4ff;
+}
+
+/* Main Section */
+.panel-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.panel-card {
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  padding: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.panel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.panel-card .card-icon {
+  font-size: 50px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+/* Modal background */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures modal is above all content */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Modal content */
+.modal-content {
+  position: relative; /* Ensure it stays above the modal background */
+  z-index: 1100; /* Higher than the modal background */
+}
+
+
+
+
+.panel-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #007bff;
+}
+
+.panel-card p {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.panel-card button {
+  background: #000000;
+  color: rgb(243, 240, 240);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.panel-card button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Footer Section */
+.panel-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #666;
+  background: rgba(240, 240, 240, 0.9);
+  border-top: 10px solid #fafafa;
+}
+
+.panel-footer span {
+  font-weight: 600;
+}
+
+.panel-footer a {
+  color: #36424e;
+  text-decoration: none;
+}
+
+.panel-footer a:hover {
+  text-decoration: underline;
+}
+
+.logo1 {
+  position: absolute; /* Allows free positioning */
+  top: 20px; /* Distance from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust centering */
+  text-align: center;
+  height: auto;
+ 
   
-  body {
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #a8edea, #fed6e3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #333;
-    overflow: hidden;
-    
-        height: 100vh;
-        overflow- -y: auto; 
-        overflow-y: auto; 
-      
-      
-  }
   
-  /* Container Styles */
-  .portal-container {
-    width: 90%;
-    max-width: 900px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
-  /* Header */
-  .portal-header {
-    text-align: center;
-    padding: 40px 20px;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(15px);
-  }
-  
-  .portal-header .logo img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-  }
-  
-  .portal-header h1 {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .panel-header h1 {
     font-size: 2rem;
-    font-weight: 700;
-    color: #444;
   }
-  
-  .portal-header p {
+
+  .panel-header p {
     font-size: 1rem;
-    color: #666;
-    margin-top: 10px;
   }
-  
-  /* Main Section */
-  .portal-main {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 30px 20px;
-    gap: 20px;
+
+  .panel-card h2 {
+    font-size: 1.3rem;
   }
-  
-  .portal-card {
-    width: calc(50% - 20px);
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(20px);
-    border-radius: 15px;
-    text-align: center;
-    padding: 30px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
+
+  .panel-card p {
+    font-size: 0.9rem;
   }
-  
-  .portal-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-  }
-  
-  .portal-card .card-icon {
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto 15px auto;
-  }
-  
-  .new-submission-icon {
-    background: url('submit-icon.png') no-repeat;
-  }
-  
-  .track-ticket-icon {
-    background: url('track-icon.png') no-repeat;
-  }
-  
-  .portal-card h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #007bff;
-    margin: 10px 0;
-  }
-  
-  .portal-card p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .portal-card button {
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    padding: 12px 25px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .portal-card button:hover {
-    background: #0056b3;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .portal-card {
-      width: 100%;
-    }
-  
-    .portal-header h1 {
-      font-size: 1.8rem;
-    }
-  
-    .portal-header p {
-      font-size: 0.9rem;
-    }
-  }
-  
+}

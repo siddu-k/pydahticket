@@ -1,0 +1,140 @@
+/* General Styles */
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 100vh; /* Ensures it takes the full height only if content is less */
+    overflow-y: auto; /* Enables scrolling if content overflows */
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Header Styling */
+  header {
+    background: linear-gradient(to right, #fc8625, #cb11af);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  header .logo {
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 30px;
+  }
+  
+  .faq h2, .contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.2rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .faq-item h3 i {
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .faq-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .contact-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #f9f9f9;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid #ddd;
+    position: relative;
+  }
+  
+  footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  footer .back-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  footer .back-button i {
+    margin-right: 5px;
+  }
+  
+  footer .back-button:hover {
+    background-color: #555;
+  }
+  
